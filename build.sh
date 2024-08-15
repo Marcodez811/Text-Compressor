@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Compile source files
-gcc -o main huffman.c tree.c pq.c main.c -Wall -Wextra -std=c11 -g
+gcc -o main ./lib/huffman.c ./lib/tree.c ./lib/pq.c main.c -Wall -Wextra -std=c11 -g
 
 # Check compilation success
 if [ $? -eq 0 ]; then
